@@ -4,7 +4,19 @@ Add filters on query Knex through a JSON object.
 
 Great for use with REST or GraphQL APIs that need filtering on requests
 
-## Example:
+### Install
+
+```
+npm i knex-json-where@latest --save
+```
+
+### Import
+
+```
+import { jsonWhere } from 'knex-json-where';
+```
+
+## Example
 
 ### JSON filters
 

@@ -1,14 +1,15 @@
 {
   "name": "knex-json-where",
-  "version": "0.1.0",
-  "description": "Add filters to a Knex query using a json",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Add filters to a Knex query using a json. Great for use with REST or GraphQL APIs that need filtering on requests",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "publish": "npm run build && npm run lint && npm run format && npm run test && npm publish"
+    "deploy": "npm run build && npm run lint && npm run format && npm run test && npm publish"
   },
   "repository": {
     "type": "git",

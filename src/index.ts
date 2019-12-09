@@ -1,6 +1,6 @@
 import Knex = require('knex');
 
-type QueryBuilderCallback = (query: Knex.QueryBuilder) => Knex.QueryBuilder;
+export type QueryBuilderCallback = (query: Knex.QueryBuilder) => Knex.QueryBuilder;
 type OperatorCallback = (query: Knex.QueryBuilder, columnName: string, value: any) => Knex.QueryBuilder;
 
 export function jsonWhere(where: any): QueryBuilderCallback {
