@@ -1,0 +1,49 @@
+{
+  "name": "knex-json-where",
+  "version": "0.1.0",
+  "description": "Add filters to a Knex query using a json",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "publish": "npm run build && npm run lint && npm run format && npm run test && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardocrescenti/knex-json-where.git"
+  },
+  "keywords": [
+    "knex",
+    "json",
+    "filter",
+    "where",
+    "condition"
+  ],
+  "author": {
+    "name": "Ricardo Crescenti",
+    "email": "ricardo.crescenti@gmail.com",
+    "url": "https://github.com/ricardocrescenti"
+  },
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/ricardocrescenti/knex-json-where/issues"
+  },
+  "homepage": "https://github.com/ricardocrescenti/knex-json-where#readme",
+  "dependencies": {
+    "@types/knex": "^0.16.1",
+    "knex": "^0.20.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "jest": "^24.9.0",
+    "pg": "^7.14.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.3"
+  }
+}
