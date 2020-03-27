@@ -44,7 +44,7 @@ const json = {
 }
 ```
 
-### Knex query (Exemple 1)
+### Knex query
 
 ```typescript
 const query = knex('users')
@@ -73,10 +73,12 @@ where (id = 1 or (name like 'ana%' and created_at >= '2019-01-01 00:00:00' or (n
 |_nin|not in|
 |_lk|like|
 |_nlk|not like|
+|_ilk|ilike (PostgreSQL only)|
+|_inlk|not ilike (PostgreSQL only)|
 |_or|or|
 
 ## Additional Information
 
 - The operator `_or` does not be used with others operators, only be used in fields level.
 
-- If you are using PostgreSQL, consider using `citext` instead of `text`, because `citext` is not case sensitive when using the `_lk` or `_nlk` operator
+- If you are using PostgreSQL, consider using `citext` instead of `text`, because `citext` is not case sensitive when using the `_lk` or `_nlk` operator, or use `ilk` and `inlk`
