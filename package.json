@@ -34,17 +34,17 @@
   "homepage": "https://github.com/ricardocrescenti/knex-json-where#readme",
   "dependencies": {
     "@types/knex": "^0.16.1",
-    "knex": "^0.20.4"
+    "knex": "^0.20.13"
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.14",
-    "jest": "^24.9.0",
-    "pg": "^7.14.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
-    "tslint": "^5.20.1",
+    "jest": "^25.2.3",
+    "pg": "^7.18.2",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.8.3"
   }
 }
