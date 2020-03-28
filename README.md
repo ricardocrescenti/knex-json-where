@@ -1,6 +1,6 @@
 # knex-json-where
 
-Add filters on query Knex through a JSON object.
+Add filters on Knex query through a JSON object.
 
 Great for use with REST or GraphQL APIs that need filtering on requests
 
@@ -79,6 +79,6 @@ where (id = 1 or (name like 'ana%' and created_at >= '2019-01-01 00:00:00' or (n
 
 ## Additional Information
 
-- The operator `_or` does not be used with others operators, only be used in fields level.
+- The operator `_or` can only be used at the field level.
 
 - If you are using PostgreSQL, consider using `citext` instead of `text`, because `citext` is not case sensitive when using the `_lk` or `_nlk` operator, or use `ilk` and `inlk`
