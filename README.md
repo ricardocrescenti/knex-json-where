@@ -24,7 +24,10 @@ import { jsonWhere } from 'knex-json-where';
 const json = {
    id: {
       _eq: 1 // id equal 1
-   }
+   },
+   birth_date: {
+      _isnull: false // and birth_date is not null (true for 'is null')
+   },
    _or: {
       name: {
          _lk: "ana%" // or name like ana
@@ -75,6 +78,7 @@ where (id = 1 or (name like 'ana%' and created_at >= '2019-01-01 00:00:00' or (n
 |_nlk|not like|
 |_ilk|ilike (PostgreSQL only)|
 |_inlk|not ilike (PostgreSQL only)|
+|_isnull|is null - is not null
 |_or|or|
 
 ## Additional Information

@@ -74,4 +74,5 @@ const whereOperators: Map<string, OperatorCallback> = new Map()
   .set('_nlk', (query: Knex.QueryBuilder, columnName: string, value: any) => query.where(columnName, 'not like', `${value}`)) /// not like
   .set('_ilk', (query: Knex.QueryBuilder, columnName: string, value: any) => query.where(columnName, 'ilike', `${value}`)) /// ilike (only for PostgreSQL)
   .set('_inlk', (query: Knex.QueryBuilder, columnName: string, value: any) => query.where(columnName, 'not ilike', `${value}`)) /// not ilike (only for PostgreSQL)
+  .set('_isnull', (query: Knex.QueryBuilder, columnName: string, value: any) => (value ? query.whereNull(columnName) : query.whereNotNull(columnName))) /// is null or not is null
   .set('_or', (query: Knex.QueryBuilder, columnName: string, value: any) => query.orWhere((query: Knex.QueryBuilder) => (query = applyJsonWhere(query, value)))); /// or

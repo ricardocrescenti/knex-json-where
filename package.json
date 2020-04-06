@@ -1,6 +1,6 @@
 {
   "name": "knex-json-where",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Add filters to a Knex query using a json. Great for use with REST or GraphQL APIs that need filtering on requests",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
