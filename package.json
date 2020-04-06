@@ -10,7 +10,7 @@
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "link": "npm run build && npm run lint && npm run test && npm link",
-    "deploy": "npm run build && npm run lint && npm run test && npm publish"
+    "publish": "npm run build && npm run lint && npm run test && npm publish"
   },
   "repository": {
     "type": "git",
